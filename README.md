@@ -13,4 +13,4 @@ I thoroughly enjoyed working on this project, and it has helped me enhance my sk
 
 <img src="https://github.com/sudhanshu1313/YAYIt-sBOGOCart/blob/main/Shopping.png" alt="calculator" width="250" height="350px">
 
-<h4>Live Demo <a href="">YAY! It’s BOGO</a> </h4>
+<h4>Live Demo <a href="https://sudhanshu1313.github.io/YAYIt-sBOGOCart/">YAY! It’s BOGO</a> </h4>
