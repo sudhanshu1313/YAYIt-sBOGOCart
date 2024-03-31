@@ -10,7 +10,11 @@ Interactive elements: Users can explore different products and view detailed inf
 
 Dynamic content: Product data is fetched from a JSON file and dynamically rendered on the webpage, allowing for easy updates and maintenance.
 I thoroughly enjoyed working on this project, and it has helped me enhance my skills in HTML, CSS, and JavaScript. I am excited to continue learning and exploring new technologies in the field of web development.
+<h4>Live Demo <a href="https://sudhanshu1313.github.io/YAYIt-sBOGOCart/">YAY! It’s BOGO</a> </h4>
+
+![Demo GIF](https://github.com/sudhanshu1313/YAYIt-sBOGOCart/blob/main/Shopping_Cart.gif)
+
 
 <img src="https://github.com/sudhanshu1313/YAYIt-sBOGOCart/blob/main/Shopping.png" alt="calculator" width="250" height="350px">
 
-<h4>Live Demo <a href="https://sudhanshu1313.github.io/YAYIt-sBOGOCart/">YAY! It’s BOGO</a> </h4>
+
