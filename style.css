@@ -1,82 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
-  font-family: 'Inter', sans-serif;
+  background-color: rgb(244, 244, 244);
+  font-family: "Inter", sans-serif;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
 }
 
 .main {
-  padding: 20px;
+  width: 450px;
+  background-color: rgb(252, 250, 250);
+  padding: 40px;
+  margin: 50px auto;
 }
 
-.card {
-  border: 1px solid #ddd;
-  padding: 10px;
+@media (max-width: 600px) {
+  .main {
+    width: 90%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.HeadingBox {
+  height: 60px;
   margin-bottom: 10px;
-}
-
-.HeadingBox .line .Title h3 {
-  margin: 0;
-}
-
-.FreeD-Container {
   display: flex;
-  justify-content: space-between;
-  margin: 10px 0;
+  align-items: center;
+  position: relative;
 }
 
-.Add-Cart {
-  text-align: center;
-  margin: 20px 0;
+.Title {
+  background-color: rgb(255, 255, 255);
+  color: #ff6b82;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
-.Add-Cart button {
-  padding: 10px 20px;
-  background-color: #ff6b82;
-  color: white;
-  border: none;
-  cursor: pointer;
+@media (max-width: 600px) {
+  .Title {
+    font-size: 18px;
+    left: 140px;
+  }
 }
 
-.LastText {
-  display: block;
-  text-align: center;
-  margin-top: 20px;
-  color: #aaa;
-}
-
-.smallbox, .big {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  border: 1px solid #ddd;
-  margin-bottom: 10px;
+.line {
+  width: 350px;
+  height: 3px;
+  background-color: #c8c8c8;
 }
 
 .smallbox {
+  margin: 5px;
+  border: 2px solid #c8c8c8;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 360px;
   cursor: pointer;
 }
 
-.big {
-  display: none;
-  flex-direction: column;
+.smallleft h2 {
+  font-size: 14px;
+}
+
+.smallleft {
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: -10px;
+}
+
+.smallleft ul li {
+  list-style: none;
+  padding: 12px 8px 12px 15px;
+  position: relative;
+}
+
+.smallleft ul li::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-image: url("https://github.com/sudhanshu1313/YAYIt-sBOGOCart/blob/main/checked01.png");
+  background-size: cover;
+  background-position: center;
+  top: 20px;
+  left: -25px;
+}
+
+.bigleft ul li::before {
+  background-image: url("https://github.com/sudhanshu1313/YAYIt-sBOGOCart/blob/main/new-moon.png");
+}
+
+.checked p {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.checked h2 {
+  font-size: 14px;
 }
 
 .badget {
+  display: inline-block;
   background-color: #ff6b82;
+  padding: 5px;
+  color: #ffffff;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.smallright h2 {
+  width: 100px;
+  font-size: 14px;
+  padding-right: 5px;
+}
+
+.smallright p {
+  font-size: 10px;
+  color: #c8c8c8;
+  text-decoration: line-through;
+}
+
+.big {
+  width: 360px;
+  border: 2px solid #ff6b82;
+  padding: 15px;
+  display: none;
+  margin-top: 10px;
+}
+
+@media (max-width: 390px) {
+  .big {
+    width: 364px;
+  }
+}
+
+.pricesection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mostpop {
+  background-color: #ff6b82;
+  padding: 10px 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-weight: 700;
   color: white;
-  padding: 2px 5px;
-  border-radius: 3px;
-  margin-left: 5px;
+  position: relative;
+  right: -12px;
+}
+
+.mostpop::before {
+  content: "";
+  height: 20px;
+  width: 110%;
+  background-color: #d7445b;
+  position: absolute;
+  left: -8px;
+  top: -10px;
+  z-index: 1;
+  clip-path: polygon(5.44% 50%, 97.17% 47%, 99.43% 110%, 1.72% 120%);
 }
 
 .colorrow {
+  display: grid;
+  grid-template-columns: 5px 50px 50px;
+  grid-template-rows: 35px;
+  grid-column-gap: 35px;
+}
+
+.colname {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.colorsection {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.colorrow select {
+  width: 71px;
+  height: 25px;
+  border-color: #c8c8c8;
+  background-color: #ffffff;
+}
+
+.MainOption option {
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+.FreeD-Container {
+  width: 360px;
   display: flex;
   justify-content: space-between;
-  margin: 5px 0;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 14px;
 }
 
-.colorhead {
-  font-weight: bold;
+.Add-Cart {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  width: 367px;
 }
 
-.MainOption {
-  width: 100%;
+.Add-Cart button {
+  width: 410px;
+  height: 40px;
+  border: none;
+  background-color: #ff6b82;
+  color: #ffffff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.Add-Cart span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.LastText {
+  margin-left: 235px;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  margin-top: 5px;
+  color: rgba(0, 0, 0, 0.4);
+  font-style: italic;
+}
+
+@media (max-width: 395px) {
+  .LastText {
+    position: relative;
+    top: -10px;
+    left: 210px;
+  }
 }
