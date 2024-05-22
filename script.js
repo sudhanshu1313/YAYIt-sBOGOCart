@@ -1,5 +1,5 @@
 // Fetch data from the JSON file
-fetch("https://sudhanshu1313.github.io/taskjson/Data.json")
+fetch("https://sudhanshu1919.github.io/task_data/Data.json")
   .then((response) => response.json())
   .then((AllData) => {
     console.log(AllData);
