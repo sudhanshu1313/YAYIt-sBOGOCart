@@ -4,7 +4,7 @@ fetch("https://sudhanshu1919.github.io/task_data/Data.json")
   .then((AllData) => {
     console.log(AllData);
 
-    // Map has call Alldata from the url and generate HTML for each item
+    // Generate HTML for each item
     let Data2 = AllData.map((value, index) => {
       return `
       <div>
@@ -85,7 +85,7 @@ function colorsection(index) {
 
 let prevCard = -1;
 function showbig(ind) {
-  if (prevCard != -1) {
+  if (prevCard !== -1) {
     document.getElementsByClassName("big")[prevCard].style.display = "none";
     document.getElementsByClassName("smallbox")[prevCard].style.display = "flex";
   }
